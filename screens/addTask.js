@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Header, Content, Form, Item, Input, View,Text, Right, Switch } from 'native-base';
-import {Button} from 'react-native'
+import { Container, Header, Content, Form, Item, Input, View,Text, Right, Switch, Button } from 'native-base';
+import {} from 'react-native'
 
 export default class AddTask extends React.Component{
     render(){
@@ -28,10 +28,9 @@ export default class AddTask extends React.Component{
                             <Input placeholder='Reminder Time' />
                         </Item>
 
-                       <Button
-                            title="Add Task"
-                            onClick={()=>alert('Add Task')}
-                        />
+                        <Button primary block>
+                            <Text> Add Task </Text>
+                        </Button>
 
                     </Form>
                     </Content>
